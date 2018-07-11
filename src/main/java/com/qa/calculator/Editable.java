@@ -2,5 +2,5 @@ package com.qa.calculator;
 
 public interface Editable {
 
-	public double editNumbers(int num1, int num2);
+	public double editNumbers(double num1, double num2);
 }
