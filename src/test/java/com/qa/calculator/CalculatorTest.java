@@ -35,8 +35,8 @@ public class CalculatorTest {
 	
 	@Test
 	public void testDivide() {
-		result = calc.divide(70,7);
-		Assert.assertEquals(10, result);
+		double result2 = calc.divide(70,7);
+		Assert.assertEquals(10.00, result2, 0.0001);
 	}
 
 }
