@@ -8,7 +8,7 @@ public class CalculatorTest {
 	
 	
 	Calculator calc;
-	int result;
+	double result;
 	
 	@Before
 	public void setup() {
@@ -18,19 +18,19 @@ public class CalculatorTest {
 	@Test
 	public void test() {
 		result = calc.add(7, 10);
-		Assert.assertEquals(17, result);
+		Assert.assertEquals(17, result, 0.001);
 	}
 	
 	@Test
 	public void testSubtract() {
 		result = calc.subtract(12,4);
-		Assert.assertEquals(8, result);
+		Assert.assertEquals(8, result, 0.001);
 	}
 	
 	@Test
 	public void testMultiply() {
 		result = calc.multiply(3,6);
-		Assert.assertEquals(18, result);
+		Assert.assertEquals(18, result, 0.001);
 	}
 	
 	@Test
